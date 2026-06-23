@@ -2,6 +2,10 @@
 
 A secure user management project built with Node.js, Express, PostgreSQL and JWT authentication. It includes a REST API, role-based access control, audit logging, security middleware and a small frontend interface to test authentication and CRUD operations.
 
+## Project Identity
+
+**User Management API** is an authentication and CRUD API foundation project focused on JWT login, protected routes, user administration and backend security basics.
+
 ## Screenshots
 
 ### Authenticated user dashboard
@@ -118,6 +122,17 @@ http://localhost:3000
 
 Open `frontend/index.html` with Live Server or another static server.
 
+## Demo
+
+This project is designed for local testing. Register a user from the frontend, then log in and test protected CRUD operations.
+
+Example local demo account:
+
+```text
+Email: angel@test.com
+Password: Admin1234
+```
+
 ## API Endpoints
 
 ### Authentication
@@ -160,9 +175,27 @@ Stores audit records for important actions, such as authentication and user mana
 - Rate limiting helps reduce brute-force and abuse attempts.
 - JSON payload size is limited to reduce unnecessary exposure.
 
+## Testing
+
+- Manual API validation through the included frontend.
+- Recommended next tests: registration, login, JWT middleware, user CRUD and role permissions.
+
+## What I Learned
+
+- REST API structure with Express controllers, routes and middleware.
+- JWT authentication and protected endpoints.
+- PostgreSQL database access from Node.js.
+- Password hashing with bcrypt.
+- CORS, Helmet and rate limiting for safer APIs.
+- Basic audit logging for user-management actions.
+
 ## Author
 
 Built by Jenmar Rondon.
 
 - GitHub: [jenmar23rondon-ux](https://github.com/jenmar23rondon-ux)
 - Repository: [user-management-api](https://github.com/jenmar23rondon-ux/user-management-api)
+
+## License
+
+MIT License.
